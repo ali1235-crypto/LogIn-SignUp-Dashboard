@@ -1,0 +1,164 @@
+* {
+  font-family: system-ui;
+  outline: 0;
+}
+.pad {
+  padding: 40px 0 30px 0;
+}
+.padb1 {
+  padding-bottom: 17px;
+}
+.padb2 {
+  padding-bottom: 35px;
+}
+.msg {
+  background-color: rgb(11, 141, 40);
+  position: absolute;
+  padding: 10px;
+  font-size: 31px;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  top: 41px;
+  right: 4px;
+  opacity: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(47, 182, 182);
+}
+nav .title h1 {
+  color: white;
+  font-size: 37px;
+}
+nav .title {
+  margin-left: 15px;
+  padding-top: 39px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: -249px;
+  width: 443px;
+  justify-content: space-between;
+}
+nav ul li {
+  padding-top: 59px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: white;
+}
+.inffo {
+  display: flex;
+  padding: 7px;
+}
+.inffo img {
+  width: 90px;
+  height: 90px;
+}
+.info {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info a {
+  color: black;
+  direction: rtl;
+  font-weight: bold;
+  cursor: pointer;
+}
+.info h1 {
+  font-size: 25px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentchild {
+  width: 94%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contentchild .item {
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+}
+.contentchild .item label {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.check label {
+  font-weight: bold;
+}
+.contentchild .item input {
+  height: 25px;
+  border: 0;
+  border-bottom: 1px dotted gray;
+}
+.contentchild .item select {
+  height: 26px;
+  border: 0;
+  border-bottom: 1px dotted gray;
+  color: gray;
+}
+.check {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 13px;
+  width: 235px;
+}
+.check input {
+  margin-right: 10px;
+  border-color: black;
+}
+.btns {
+  width: 94%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 30px 0;
+}
+.btns button {
+  border: 0;
+  font-size: 32px;
+  padding: 8px 25px;
+  color: white;
+  font-weight: bold;
+  margin-left: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mat-grid-tile {
+  background-color: rgb(242, 242, 242);
+}
+.f > ::ng-deep .mat-grid-tile-content {
+  justify-content: flex-end;
+}
+mat-grid-list {
+  width: 94%;
+  margin: 15px auto;
+}
+.btnsel {
+  padding: 2px 14px;
+  color: rgb(47, 44, 223);
+  border: 1px solid rgb(47, 44, 223);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.btnsel:hover {
+  color: rgb(242, 242, 242);
+  border-color: rgb(242, 242, 242);
+  background-color: rgb(47, 44, 223);
+}

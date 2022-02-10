@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0;
+}
+.divbody {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.divform {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 182, 182);
+  padding-top: 100px;
+}
+.divnav {
+  width: 50vw;
+
+  background-image: url("../../assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 550px;
+}
+.divitem {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.divitem h1 {
+  color: white;
+  width: 215px;
+  text-align: center;
+  margin: 10px auto 69px;
+  font-family: system-ui;
+  font-size: 38px;
+}
+
+.divlink a {
+  color: rgb(47, 182, 182);
+  font-weight: bolder;
+  font-size: 18px;
+}
+.divnav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 15px 114px 20px 20px;
+  font-weight: 500;
+}
+.divnav ul li a {
+  display: inline-block;
+  margin: auto;
+  width: 84px;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 42px;
+  font-size: 17px;
+}
+.divnav ul li img {
+  width: 100px;
+  height: 100px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  margin: 0 30px 20px 0;
+  color: white;
+}
+.divsignup {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item label {
+  padding-bottom: 8px;
+}
+.item input {
+  height: 25px;
+  border: 0;
+  border-bottom: 1px dotted gray;
+  background-color: rgb(47, 182, 182);
+  color: white;
+}
+.item select {
+  height: 26px;
+  border: 0;
+  border-bottom: 1px dotted gray;
+  color: gray;
+  background-color: rgb(47, 182, 182);
+}
+.check {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 13px;
+  width: 100%;
+  color: white;
+  margin-bottom: 40px;
+}
+.check input {
+  margin-right: 10px;
+}
+.divsignup button {
+  width: 100%;
+  padding: 3px 20px;
+  font-weight: bold;
+  color: rgb(47, 182, 182);
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  font-size: 46px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}

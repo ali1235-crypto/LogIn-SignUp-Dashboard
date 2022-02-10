@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0;
+}
+.divbody {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.divform {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divnav {
+  width: 50vw;
+  background-color: rgb(47, 182, 182);
+  background-image: url("./../assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center 93%;
+  background-size: 550px;
+}
+.divitem {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.divlogin {
+  display: flex;
+  flex-direction: column;
+}
+.divitem h1 {
+  color: rgb(47, 182, 182);
+  width: 188px;
+  text-align: center;
+  margin: 10px auto 69px;
+  font-family: system-ui;
+}
+.divitem label,
+.divitem span {
+  font-weight: bold;
+  color: rgb(88, 94, 97);
+  font-family: system-ui;
+}
+.divitem input[type="text"],
+.divitem input[type="password"] {
+  border: 0;
+  border-bottom: 1px dotted rgb(88, 94, 97);
+  margin: 10px 0 33px 0;
+  height: 30px;
+  font-size: 17px;
+  color: rgb(88, 94, 97);
+}
+.divitem span {
+  margin-left: 10px;
+}
+.divitem .divcheck {
+  margin-bottom: 30px;
+}
+.divitem button {
+  font-weight: bold;
+  font-size: 34px;
+  color: white;
+  background-color: rgb(47, 182, 182);
+  border: 0;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.divitem .divlink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.divlink a {
+  color: rgb(47, 182, 182);
+  font-weight: bolder;
+  font-size: 18px;
+}
+.divnav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 40px;
+}
+.divnav ul li a {
+  display: inline-block;
+  margin: auto;
+  width: 80px;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 42px;
+  font-size: 17px;
+}
+.divnav ul li img {
+  width: 100px;
+  height: 100px;
+}

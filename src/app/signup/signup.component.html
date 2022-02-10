@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form [formGroup]="v.form">
+  <div class="divbody">
+    <div class="divform">
+      <div class="divitem">
+        <h1>
+          Welcome to My Task
+        </h1>
+        <div class="divsignup">
+          <div class="item">
+            <label>First Name*</label>
+            <input type="text" placeholder="Enter your fisrt name" formControlName="first"/>
+          </div>
+          <div class="item">
+            <label>Middle Name</label>
+            <input type="text" placeholder="Enter your middle name" formControlName="middle"/>
+          </div>
+          <div class="item">
+            <label>Last Name*</label>
+            <input type="text" placeholder="Enter your last name" formControlName="last"/>
+          </div>
+          <div class="item">
+            <label>Gender*</label>
+            <select formControlName="gender">
+              <option [selected]="true">Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="item">
+            <label>Date of Birth*</label>
+            <input type="date" value="formDate" formControlName="date" [min]="minDate | date:'yyyy-MM-dd'" [max]="maxDate | date:'yyyy-MM-dd'"/>
+          </div>
+          <div class="item">
+            <label>Phone Number*</label>
+            <input type="tel" placeholder="961 XX XXX XXX" formControlName="phone" appPhone/>
+          </div>
+          <div class="item" style="width: 497px">
+            <label>Email</label>
+            <input type="email" placeholder="Type your email" formControlName="email"/>
+          </div>
+          <div class="item" style="width: 497px" >
+            <label>Departement*</label>
+            <select formControlName="dep">
+              <option [selected]="true" value="99">select your type</option>
+              <option value="wadwad">dwadwa</option>
+            </select>
+          </div>
+          <div class="item" style="width: 497px">
+            <label>User Type*</label>
+            <select formControlName="usertype">
+              <option [selected]="true">select yout type</option>
+            </select>
+          </div>
+          <div class="item" style="width: 497px">
+            <label>User Name*</label>
+            <input type="text" placeholder="Enter your fisrt name" formControlName="username"/>
+          </div>
+          <div class="item" style="width: 497px">
+            <label>Password*</label>
+            <input type="text" placeholder="Enter your fisrt name" formControlName="password"/>
+          </div>
+          <div class="check">
+            <input type="checkbox" /> <label>is Active</label>
+          </div>
+          <button (click)="Register();" type="submit">Create</button>
+        </div>
+      </div>
+    </div>
+    <div class="divnav">
+      <ul>
+        <li><img src="./../../assets/s.svg"/></li>
+        <li><a routerLink="login">About Us</a></li>
+        <li><a routerLink="dashboard">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>{{this.v.departement.value}}
+  </div>
+</form>
+</body>
+</html>

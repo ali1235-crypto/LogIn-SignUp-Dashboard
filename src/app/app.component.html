@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="divbody">
+    <div class="divform">
+      <div class="divitem">
+        <h1>
+          Welcome to My Task {{v.form.valid}}
+        </h1>
+        <form [formGroup]="v.form">
+          <div class="divlogin">
+            <label>User Name</label>
+            <input type="text" placeholder="Type your username" formControlName="username"/>
+            <label>Password</label>
+            <input [type]="password()" placeholder="Enter your password" id="p" formControlName="password"/>
+            <div class="divcheck"><input type="checkbox" value="Remember Me"  formControlName="remeberme"/><span>Remember Me</span></div>{{''}}
+            <button (click)="Login()">Log In</button>
+            <div class="divlink"><a routerLink="signup">Create User</a><a href="#">Forget User?</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="divnav">
+      <ul>
+        <li><img src="./../assets/s.svg"/></li>
+        <li><a routerLink="login">About Us</a></li>
+        <li><a routerLink="dashboard">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<div class="msg" *ngIf="ss" @animation>
+  Successufely Saved!
+</div>
+<nav>
+  <div class="title">
+    <h1>My Task</h1>
+  </div>
+  <ul>
+    <li><a href="#">Users</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">FAQs</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <div class="inffo">
+    <div class="info">
+      <h1>{{ name }}</h1>
+      <a (click)="Logout()">Log out</a>
+    </div>
+    <img src="./../../../assets/s.svg" />
+  </div>
+</nav>
+<form [formGroup]="v.form">
+<div class="content">
+  <div class="contentchild">
+
+    <div class="item pad">
+      <label [ngStyle]="{'color': v.firstname.valid||!v.firstname.touched?'black':'red'}">First Name*</label>
+      <input type="text" placeholder="Enter your fisrt name" formControlName="first" [ngStyle]="{'borderColor': v.firstname.valid||!v.firstname.touched?'black':'red'}"/>
+    </div>
+    <div class="item pad">
+      <label>Middle Name</label>
+      <input type="text" placeholder="Enter your middle name" formControlName="middle"/>
+    </div>
+    <div class="item pad">
+      <label>Last Name*</label>
+      <input type="text" placeholder="Enter your last name" formControlName="last"/>
+    </div>
+    <div class="item pad">
+      <label>Gender*</label>
+      <select formControlName="gender">
+        <option [selected]="true">Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+    <div class="item pad">
+      <label>Date of Birth*</label>
+      <input type="date" value="formDate" formControlName="date" [min]="minDate | date:'yyyy-MM-dd'" [max]="maxDate | date:'yyyy-MM-dd'"/>
+    </div>
+    <div class="item padb1">
+      <label>Phone Number*</label>
+      <input type="tel" placeholder="961 XX XXX XXX" formControlName="phone" appPhone/>
+    </div>
+    <div class="item padb1" style="width: 497px">
+      <label>Email</label>
+      <input type="email" placeholder="Type your email" formControlName="email"/>
+    </div>
+    <div class="item padb1" style="width: 497px" >
+      <label>Departement*</label>
+      <select formControlName="dep">
+        <option>select your type</option>
+      </select>
+    </div>
+    <div class="item padb2" style="width: 497px">
+      <label>User Type*</label>
+      <select formControlName="usertype">
+        <option>select yout type</option>
+      </select>
+    </div>
+    <div class="item padb2">
+      <label>User Name*</label>
+      <input type="text" placeholder="Enter your fisrt name" formControlName="username"/>
+    </div>
+    <div class="item padb2">
+      <label>Password*</label>
+      <input type="text" placeholder="Enter your fisrt name" />
+    </div>
+    <div class="padb2 check">
+      <input type="checkbox" /> <label>is Active</label>
+    </div>
+  </div>
+  <div class="btns">
+    <button style="background-color: rgb(47, 182, 182);;" (click)="ss=!ss" type="button">Add/Update</button>
+    <button style="background-color: gray;">Search</button>
+    <button style="background-color: red;">Cancel</button>
+  </div>
+</div>
+</form>
+<mat-grid-list cols="12" rowHeight="30px" *ngFor="let s of arr">
+  <mat-grid-tile *ngFor="let c of l;let i=index" [colspan]="organize(i)">
+    {{createGridTitle(s,i)}}
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" class="f">
+    <button class="btnsel">select</button>
+  </mat-grid-tile>
+</mat-grid-list>
